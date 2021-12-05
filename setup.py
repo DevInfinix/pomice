@@ -14,7 +14,7 @@ setuptools.setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    install_requires=['discord.py>=2.0.0a'],
+    install_requires=[],
     extra_require=None,
     classifiers=[
         "Framework :: AsyncIO",
@@ -28,5 +28,5 @@ setuptools.setup(
         "Topic :: Internet"
     ],
     python_requires='>=3.8',
-    keywords=['pomice', 'lavalink', "discord.py"],
+    keywords=['pomice', 'lavalink', "discord.py", "pycord"],
 )
