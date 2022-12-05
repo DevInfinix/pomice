@@ -2,7 +2,7 @@ import setuptools
 import re
 
 version = ''
-requirements = ['discord.py>=2.0.0', 'aiohttp>=3.7.4,<4', 'orjson']
+requirements = ['aiohttp>=3.7.4,<4', 'orjson']
 with open('pomice/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
@@ -38,7 +38,7 @@ setuptools.setup(
     url="https://github.com/cloudwithax/pomice",
     packages=setuptools.find_packages(),
     license="GPL",
-    description="The modern Lavalink wrapper designed for Discord.py",
+    description="The modern Lavalink wrapper designed for Discord.py/Pycord",
     long_description=readme,
     long_description_content_type="text/markdown",
     include_package_data=True,
@@ -56,5 +56,5 @@ setuptools.setup(
         "Topic :: Internet"
     ],
     python_requires='>=3.8',
-    keywords=['pomice', 'lavalink', "discord.py"],
+    keywords=['pomice', 'lavalink'],
 )
